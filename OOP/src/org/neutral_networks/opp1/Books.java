@@ -16,6 +16,12 @@ public class Books {
         this.booksDepartment = booksDepartment;
     }
 
+    // we can create multiple constructor in the class
+    public Books(String bName, String author) {
+        this.bookName = bName;
+        this.bookAuthor = author;
+    }
+
     public String getBookName() {
         return bookName;
     }

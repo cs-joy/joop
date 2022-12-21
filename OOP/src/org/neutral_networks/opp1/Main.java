@@ -57,6 +57,11 @@ public class Main {
         System.out.println("Author: " + library.getBookAuthor());
         System.out.println("Department: " + library.getBooksDepartment());
 
+        System.out.println("\tSecond Constructor with two parameter");
+        Books info = new Books("Discrete Mathematics", "Roggen Pearson");
+        System.out.println("Book Name: " + info.getBookName());
+        System.out.println("Book Author: " + info.getBookAuthor());
+
 
     }
 }
