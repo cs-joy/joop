@@ -47,5 +47,16 @@ public class Main {
         String email = contactList.getEmail();
         System.out.println("Email: " + email);
 
+
+        System.out.println("\n\tConstructor");
+        Books library = new Books("Physical Chemistry", "Chemistry", "04S234F79", "Peterson", "Pharmacy");
+        System.out.println("\t---Book List---");
+        System.out.println("Name: " + library.getBookName());
+        System.out.println("Category: " + library.getBookCategory());
+        System.out.println("Accession: " + library.getAccessNumber());
+        System.out.println("Author: " + library.getBookAuthor());
+        System.out.println("Department: " + library.getBooksDepartment());
+
+
     }
 }
