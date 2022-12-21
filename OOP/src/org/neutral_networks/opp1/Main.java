@@ -21,5 +21,13 @@ public class Main {
 
         iPhone.setPrice(1500);
         System.out.println(iPhone.getPrice());
+
+
+        System.out.println("\n\n---\n\tprivateAS");
+        // create object
+        privateAS contactList = new privateAS();
+        contactList.setContactName("Md. Zahangir Alam");
+        String user = contactList.getContactname();
+        System.out.println(user);
     }
 }
