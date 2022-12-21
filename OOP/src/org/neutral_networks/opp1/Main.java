@@ -39,6 +39,10 @@ public class Main {
         int code = contactList.getNetworkCode();
         System.out.println("Code: " + code);
 
+        contactList.setNumber("+8801773546429");
+        String myNumber = contactList.getNumber();
+        System.out.println("Number: " + myNumber);
+
         contactList.setEmail("martinez@yahoo.net");
         String email = contactList.getEmail();
         System.out.println("Email: " + email);

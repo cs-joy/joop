@@ -5,7 +5,7 @@ public class privateAS {
     private String contactName;
     private String network;
     private int networkCode;
-    private int number;
+    private String number;
 
     private String email;
 
@@ -35,11 +35,11 @@ public class privateAS {
         return networkCode;
     }
 
-    public void setNumber(int number) {
+    public void setNumber(String number) {
         this.number = number;
     }
 
-    public int getNumber() {
+    public String getNumber() {
         return number;
     }
 
