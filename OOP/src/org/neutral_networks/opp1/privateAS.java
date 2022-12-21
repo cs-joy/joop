@@ -16,6 +16,38 @@ public class privateAS {
     }
 
     public String getContactname() {
-        return this.contactName;
+        return contactName;
+    }
+
+    public void setNetwork(String network) {
+        this.network = network;
+    }
+
+    public String getNetwork() {
+        return network;
+    }
+
+    public void setNetworkCode(int networkCode) {
+        this.networkCode = networkCode;
+    }
+
+    public int getNetworkCode() {
+        return networkCode;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getEmail() {
+        return email;
     }
 }

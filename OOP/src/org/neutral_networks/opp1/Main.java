@@ -26,8 +26,22 @@ public class Main {
         System.out.println("\n\n---\n\tprivateAS");
         // create object
         privateAS contactList = new privateAS();
+
         contactList.setContactName("Md. Zahangir Alam");
         String user = contactList.getContactname();
-        System.out.println(user);
+        System.out.println("Name: " + user);
+
+        contactList.setNetwork("Grammeenphone");
+        String network = contactList.getNetwork();
+        System.out.println("Network: " + network);
+
+        contactList.setNetworkCode(017);
+        int code = contactList.getNetworkCode();
+        System.out.println("Code: " + code);
+
+        contactList.setEmail("martinez@yahoo.net");
+        String email = contactList.getEmail();
+        System.out.println("Email: " + email);
+
     }
 }
