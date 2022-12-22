@@ -81,5 +81,21 @@ public class Main {
         System.out.println(res);
 
 
+        System.out.println("\taccess specifier");
+        System.out.println("\t----------------");
+        protectedAccessSpecifierExm object = new protectedAccessSpecifierExm();
+        //object.obj.productQuantity = "1000";
+        object.disPro();
+
+        System.out.println("\t----------");
+        System.out.println("\tobject of obj");
+        String name = object.obj.name = "Laptop";
+        System.out.println("Name: " + name);
+        object.obj.publicMethod();
+        object.obj.protectedMethod(); // and object.protectedMethod(); both are equivalent
+
+        //object.obj.display(); // possible to call this method
+
+
     }
 }
