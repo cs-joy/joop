@@ -1,5 +1,8 @@
 package org.neutral_networks.opp1;
 
+import org.neutral_networks.ie.Recursion;
+import org.neutral_networks.ie.arrayRecursion;
+
 public class Main {
     public static void main(String[] args) {
         Phone iPhone = new Phone();
@@ -61,6 +64,21 @@ public class Main {
         Books info = new Books("Discrete Mathematics", "Roggen Pearson");
         System.out.println("Book Name: " + info.getBookName());
         System.out.println("Book Author: " + info.getBookAuthor());
+
+
+        System.out.println("\n\tRecursion");
+        Recursion recursion = new Recursion();
+
+        int num = 10;
+        recursion.setNumber(num);
+        int result = recursion.getNumber();
+        System.out.println("summation of " + num + " is= " + result);
+
+        System.out.println("\t\tArrayAdd");
+        int[] myNumbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        arrayRecursion myObj = new arrayRecursion();
+        int res = myObj.sumofArrayElements(myNumbers);
+        System.out.println(res);
 
 
     }
