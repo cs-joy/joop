@@ -2,6 +2,7 @@ package org.neutral_networks.opp1;
 
 import org.neutral_networks.ie.Recursion;
 import org.neutral_networks.ie.arrayRecursion;
+import org.neutral_networks.ie.polymorphism;
 import org.neutral_networks.ie.protect;
 
 public class Main {
@@ -102,6 +103,10 @@ public class Main {
         protect protectObj = new protect();
         protectObj.inptuExtract();
 
+
+        System.out.println("----\n\t--Polymorphism");
+        polymorphism polyObj = new polymorphism();
+        polyObj.display();
 
     }
 }
