@@ -2,6 +2,7 @@ package org.neutral_networks.opp1;
 
 import org.neutral_networks.ie.Recursion;
 import org.neutral_networks.ie.arrayRecursion;
+import org.neutral_networks.ie.protect;
 
 public class Main {
     public static void main(String[] args) {
@@ -95,6 +96,11 @@ public class Main {
         object.obj.protectedMethod(); // and object.protectedMethod(); both are equivalent
 
         //object.obj.display(); // possible to call this method
+
+
+        System.out.println("\t\n--protected modifier in different package");
+        protect protectObj = new protect();
+        protectObj.inptuExtract();
 
 
     }
