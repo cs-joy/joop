@@ -36,7 +36,11 @@ public class Car {
     public void setColor(String color) {
         this.color = color;
     }
-    
+
+    /**
+     * Return the engine of our car
+     * @return
+     */
     public Engine getEngine() {
         return engine;
     }
