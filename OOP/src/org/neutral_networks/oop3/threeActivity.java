@@ -17,7 +17,7 @@ public class threeActivity {
         System.out.println("Name: " + marcedes.getName());
 
         Engine engn = marcedes.getEngine();
-        
+
         // get engine model of the car
         System.out.println("Engine Model: " + marcedes.getEngine().getModel());
     }
