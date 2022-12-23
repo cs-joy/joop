@@ -2,9 +2,9 @@ package org.neutral_networks.oop3;
 
 public class Engine {
     private String model;
-    private String rpm; // rpm = round per minute
+    private int rpm; // rpm = round per minute
 
-    public Engine(String model, String rpm) {
+    public Engine(String model, int rpm) {
         this.model = model;
         this.rpm = rpm;
     }
@@ -17,11 +17,11 @@ public class Engine {
         this.model = model;
     }
 
-    public String getRpm() {
+    public int getRpm() {
         return rpm;
     }
 
-    public void setRpm(String rpm) {
+    public void setRpm(int rpm) {
         this.rpm = rpm;
     }
 }
