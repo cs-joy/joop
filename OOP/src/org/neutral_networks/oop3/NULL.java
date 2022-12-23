@@ -7,6 +7,13 @@ public class NULL {
 
         // when objects is null generally we can not perform any type of operation. for example:
         // we can not use the `getName()` method inside the `marcedes` object
-        marcedes.getName(); // get Run Time error: NullPointerException
+        //marcedes.getName(); // get Run Time error: NullPointerException
+
+
+        if(marcedes != null) {
+            marcedes.getName();
+        } else {
+            System.out.println("The car was null");
+        }
     }
 }
