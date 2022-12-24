@@ -29,5 +29,28 @@ public class MapCollection {
         System.out.println(emailList.containsKey("Jerry")); // return boolean value (if exists it will be return tru otherwise false
         // check if the given Value is exists in the map
         System.out.println(emailList.containsValue("jim@gmail.com")); // return boolean value (if exists it will be return tru otherwise false
+
+        // check is map is empty or not
+        System.out.println(emailList.isEmpty());
+
+        // put the given key and value in the map if given key and value isn't present inside of map
+        System.out.println(emailList.putIfAbsent("Kally", "kally@gmail.com")); // return String
+        // if this value and key assign or append into the Map the size of map will be increases to 4
+        System.out.println(emailList.size());
+        // print the element
+        System.out.println(emailList.get("Kally"));
+
+        // clear all the elements from the map
+        //emailList.clear();
+        // if map is cleared then return size would be 0
+        //System.out.println(emailList.size());
+
+
+        // replace the old value to new with given key
+        emailList.replace("Mike", "mike@freecodecamp.org", "mike@mike-code.io");
+        System.out.println(emailList.get("Mike"));
+
+
+        // check out all the function inside of map
     }
 }
