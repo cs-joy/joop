@@ -3,7 +3,7 @@ package org.neutral_networks.collections;
 import java.util.ArrayList;
 import java.util.List;
 
-public class definingArrays {
+public class Main {
     public static void main(String[] args) {
         String[] names = new String[5]; // where 5 is the size of names array
 
@@ -65,7 +65,10 @@ public class definingArrays {
         // check is the array list is empty or not
         // using isEmpty() and it should return boolean value
         System.out.println(students.isEmpty()); // return false because in the students array list have elements
-        students.
+        // get index number of an element in the array list
+        System.out.println(students.indexOf("Jim")); // should return 0
+        // but if the given element are not in the array list this always should return -1
+        System.out.println(students.indexOf("Kally")); // return -1
 
         // there is another way:
         List<String> employeers = new ArrayList<>();
