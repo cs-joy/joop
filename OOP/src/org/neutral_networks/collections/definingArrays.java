@@ -52,6 +52,9 @@ public class definingArrays {
         System.out.println(students.get(1)); // print "Kally"
         // get size of the array list
         System.out.println("Size of the array list: " + students.size());
+        // clear or remove all the element inside the array list using clear()
+        students.clear();
+        System.out.println("Size of the array list: " + students.size());
 
         // there is another way:
         List<String> employeers = new ArrayList<>();
