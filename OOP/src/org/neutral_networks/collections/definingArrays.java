@@ -58,6 +58,14 @@ public class definingArrays {
         // as well as we can remove a single element from the array list using remove()
         students.remove("Kally"); // so remove the "Kally" element from the list
         System.out.println(students.get(1)); // print "Brad" as index 1
+        // others function in array list
+        System.out.println(students.contains("Kally")); // should return false because in student array list haven't "Kally" element so return it false otherwise if element is present in that array list it will return true
+        // like
+        System.out.println(students.contains("Brad"));
+        // check is the array list is empty or not
+        // using isEmpty() and it should return boolean value
+        System.out.println(students.isEmpty()); // return false because in the students array list have elements
+        students.
 
         // there is another way:
         List<String> employeers = new ArrayList<>();
