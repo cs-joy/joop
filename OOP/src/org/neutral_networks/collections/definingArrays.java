@@ -1,5 +1,8 @@
 package org.neutral_networks.collections;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class definingArrays {
     public static void main(String[] args) {
         String[] names = new String[5]; // where 5 is the size of names array
@@ -34,6 +37,16 @@ public class definingArrays {
         // then inside of this process have lots of code and copy and pasting thing is good anyway, and when
         // peoples are downloading this information's from the array it will take much time
         // and that's why this is not effective or efficient solution
+
+        /////////////////////////////////////////////////////////////////
+        // so we should need to get efficient solution and that's why we use `Collections`
+        // there have multiple kinds of Collections in java
+
+        // the first of is:
+        ArrayList<String> students = new ArrayList<>();
+
+        // there is another way:
+        List<String> employeers = new ArrayList<>();
     }
 
 }
