@@ -43,7 +43,7 @@ public class Main {
         // there have multiple kinds of Collections in java
 
         // the first of is:
-        ArrayList<String> students = new ArrayList<>();
+        ArrayList<String> students = new ArrayList<>(); // ArrayList<argument> - argument can not be primitive data type(like, int, double, float, , etc), it might be object type (like, String,.. etc)
         // now add elements to the array list
         students.add("Jim");
         students.add("Kally");
@@ -69,6 +69,27 @@ public class Main {
         System.out.println(students.indexOf("Jim")); // should return 0
         // but if the given element are not in the array list this always should return -1
         System.out.println(students.indexOf("Kally")); // return -1
+        // set element at specific index in the array list
+        students.set(1, "Jerry");
+        System.out.println(students.get(1));
+
+        // printing all the elements in the array list
+        ArrayList<String> aub_dept = new ArrayList<>();
+        aub_dept.add("ISLAM");
+        aub_dept.add("CSE");
+        aub_dept.add("ENG");
+        aub_dept.add("LAW");
+        aub_dept.add("IT");
+        aub_dept.add("BBA");
+        aub_dept.add("BANGLA");
+
+        for(int i=0; i<aub_dept.size(); i++) {
+            System.out.println(aub_dept.get(i));
+        }
+
+
+
+
 
         // there is another way:
         List<String> employeers = new ArrayList<>();
