@@ -55,7 +55,41 @@ public class App {
 
                     break;
                 case 2:
+                    patient.getRightEye().getDetails();
+                    if(patient.getRightEye().isOpened()) {
+                        System.out.println("\t\t1. Close the Eye");
+                        if(scanner.nextInt() == 1) {
+                            patient.getRightEye().close();
+                        } else {
+                            continue;
+                        }
+                    } else {
+                        System.out.println("\t\t1. Open the Eye");
+                        if(scanner.nextInt() == 1) {
+                            patient.getRightEye().open();
+                        } else {
+                            continue;
+                        }
+                    }
                     break;
+                case 3:
+                    patient.getHeart().getDetails();
+                    System.out.println("\t\t1. Change the heart rate");
+                    if (scanner.nextInt() == 1) {
+                        System.out.println("Enter the new heart rate: ");
+                        int newHeartRate = scanner.nextInt();
+                        patient.getHeart().setRate(newHeartRate);
+                        System.out.println("Heart rate changed to: " + patient.getHeart().getRate());
+                    } else {
+                        continue;
+                    }
+                    break;
+                case 4:
+                    break;
+                case 5:
+                    break;
+                default:
+
             }
         }
 
