@@ -21,6 +21,11 @@ public class Eye extends Organ{
         System.out.println(this.getName() + " Opened");
     }
 
+    public void close() {
+        this.setOpened(false);
+        System.out.println(this.getName() + " Closed");
+    }
+
     public String getColor() {
         return color;
     }
