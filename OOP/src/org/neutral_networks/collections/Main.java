@@ -1,7 +1,9 @@
 package org.neutral_networks.collections;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
@@ -46,6 +48,11 @@ public class Main {
         ArrayList<String> students = new ArrayList<>(); // ArrayList<argument> - argument can not be primitive data type(like, int, double, float, , etc), it might be object type (like, String,.. etc)
         // so if we declare number list then we should use java class as a type of the array list
         // like:: ArrayList<Integer> number = new ArrayList<>(); // this will be hold all the integer numbers
+        // so,, same as for other primitive types,, for example::
+        //    :: ArrayList<Double> doubleNumbers = new ArrayList<>();
+        //    :: ArrayList<Long> LongNumbers = new ArrayList<>();
+        //    :: ArrayList<Boolean> BooleanNumbers = new ArrayList<>();
+        //    :: ArrayList<Float> FloatNumbers = new ArrayList<>();
 
         // now add elements to the array list
         students.add("Jim");
@@ -90,12 +97,24 @@ public class Main {
             System.out.println(aub_dept.get(i));
         }
 
-
-
-
-
         // there is another way:
         List<String> employeers = new ArrayList<>();
+
+        ///////////////////////////////////////
+        // -- ok, that's enought talking about ArrayList collection -- //
+        ///////////////////////////////////////
+
+
+
+
+
+        // there have another Collection in java
+        // and this is "Maps", when you have some `key`-`value` pair data
+        Map<String, String> contact = new HashMap<>(); //<String, String> String type `Key` and also String type `Value`
+
+        // for more to check second file called `MapCollection`
+
+
     }
 
 }
