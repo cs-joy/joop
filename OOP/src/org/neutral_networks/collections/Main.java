@@ -44,6 +44,9 @@ public class Main {
 
         // the first of is:
         ArrayList<String> students = new ArrayList<>(); // ArrayList<argument> - argument can not be primitive data type(like, int, double, float, , etc), it might be object type (like, String,.. etc)
+        // so if we declare number list then we should use java class as a type of the array list
+        // like:: ArrayList<Integer> number = new ArrayList<>(); // this will be hold all the integer numbers
+
         // now add elements to the array list
         students.add("Jim");
         students.add("Kally");
