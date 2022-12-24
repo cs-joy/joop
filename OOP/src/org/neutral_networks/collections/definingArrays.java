@@ -44,6 +44,14 @@ public class definingArrays {
 
         // the first of is:
         ArrayList<String> students = new ArrayList<>();
+        // now add elements to the array list
+        students.add("Jim");
+        students.add("Kally");
+        students.add("Brad");
+        // access elements
+        System.out.println(students.get(1)); // print "Kally"
+        // get size of the array list
+        System.out.println("Size of the array list: " + students.size());
 
         // there is another way:
         List<String> employeers = new ArrayList<>();
