@@ -9,6 +9,17 @@ public class Patient {
     private Stomach stomach;
     private Skin skin;
 
+    /**
+     * constructor
+     *
+     * @param name
+     * @param age
+     * @param leftEye
+     * @param rightEye
+     * @param heart
+     * @param stomach
+     * @param skin
+     */
     public Patient(String name, int age, Eye leftEye, Eye rightEye, Heart heart, Stomach stomach, Skin skin) {
         this.name = name;
         this.age = age;
