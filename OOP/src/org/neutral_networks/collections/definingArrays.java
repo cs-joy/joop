@@ -29,6 +29,11 @@ public class definingArrays {
         // now append the value at index 6
         updateDepartment[6] = "BANGLA";
         System.out.println(updateDepartment[6]);
+
+        // this solution is not much effective because if in that array have lots of elements like(1 million)
+        // then inside of this process have lots of code and copy and pasting thing is good anyway, and when
+        // peoples are downloading this information's from the array it will take much time
+        // and that's why this is not effective or efficient solution
     }
 
 }
