@@ -10,6 +10,17 @@ public class Eye extends Organ{
         this.isOpened = isOpened;
     }
 
+    @Override
+    public void getDetails() {
+        super.getDetails();
+        System.out.println("Color: " + this.getColor());
+    }
+
+    public void open() {
+        this.setOpened(true);
+        System.out.println(this.getName() + " Opened");
+    }
+
     public String getColor() {
         return color;
     }
