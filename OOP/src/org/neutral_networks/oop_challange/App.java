@@ -85,10 +85,20 @@ public class App {
                     }
                     break;
                 case 4:
+                    patient.getStomach().getDetails();
+                    System.out.println("\t\t1. Digest");
+                    if (scanner.nextInt() == 1) {
+                        patient.getStomach().Digest();
+                    } else {
+                        continue;
+                    }
                     break;
                 case 5:
+                    patient.getSkin().getDetails();
                     break;
                 default:
+                    shouldFinished = true;
+                    break;
 
             }
         }
