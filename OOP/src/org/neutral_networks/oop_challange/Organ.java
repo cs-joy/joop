@@ -9,6 +9,11 @@ public class Organ {
         this.medicalCondition = medicalCondition;
     }
 
+    public void getDetails() {
+        System.out.println("Name: " + this.getName());
+        System.out.println("Medical Condition: " + this.getMedicalCondition());
+    }
+
     public String getName() {
         return name;
     }
