@@ -10,6 +10,11 @@ public class TestClass {
         this.skinColor = skinColor;
     }
 
+    // static method
+    public static void printSomething() {
+        System.out.println("Printing....");
+    }
+
     public static String getName() {
         return name;
     }
