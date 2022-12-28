@@ -1,6 +1,6 @@
 package org.neutral_networks.staticKeyword;
 
-public class Main {
+public class StaticMain {
     public static void main(String[] args) {
         // when we declare a variable is static type and after that when we call the variable or method we do not have need to create object to call the function or variable
         // for example:
