@@ -14,5 +14,13 @@ public class secondTest { // here modifier "private" and "static"  not allowed h
         private void printAge() {
             System.out.println("Age: " + age);
         }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
     }
 }
