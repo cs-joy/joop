@@ -1,9 +1,11 @@
 package org.neutral_networks.concurrency_Exceptions.Exceptions;
 
-public class AirthmeticException {
+public class Main {
     public static void main(String[] args) {
         int a = 6;
         int b = 0;
+
+        //System.out.println(a/b);
 
         // except only arithmetic exception to use "ArithmeticException"
         try {
@@ -17,6 +19,15 @@ public class AirthmeticException {
             System.out.println(a/b);
         } catch (Exception e) {
             System.out.println("B was zero");
+        }
+
+        // NullPointerException
+        String name = null;
+        //System.out.println(name.equals("AJ"));
+        try {
+            System.out.println(name.equals("AJ"));
+        } catch (NullPointerException e) {
+            System.out.println("string was null");
         }
     }
 
