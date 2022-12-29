@@ -20,5 +20,15 @@ public class Main {
         });
         // main thread
         thread.start();
+
+        for(int i=0; i<5; i++) {
+            System.out.println("Printing " + i + " in main thread.");
+            //Thread.sleep(1000);
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException err) {
+                err.printStackTrace();
+            }
+        }
     }
 }
