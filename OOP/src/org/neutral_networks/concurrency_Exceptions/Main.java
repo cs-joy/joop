@@ -12,8 +12,8 @@ public class Main {
                     //Thread.sleep(1000);
                     try {
                         Thread.sleep(1000);
-                    } catch (InterruptedException err) {
-                        err.printStackTrace();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
                     }
                 }
             }
@@ -26,8 +26,8 @@ public class Main {
             //Thread.sleep(1000);
             try {
                 Thread.sleep(1000);
-            } catch (InterruptedException err) {
-                err.printStackTrace();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
         }
     }
