@@ -11,3 +11,7 @@ java oop
 - [Interface](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html)
 
 - [Abstract](https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
+
+- [Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency/index.html)
+
+- [Exceptions](https://docs.oracle.com/javase/tutorial/essential/exceptions/definition.html)
