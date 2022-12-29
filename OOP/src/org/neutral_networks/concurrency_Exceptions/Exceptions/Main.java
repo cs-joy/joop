@@ -27,7 +27,8 @@ public class Main {
         try {
             System.out.println(name.equals("AJ"));
         } catch (NullPointerException e) {
-            System.out.println("string was null");
+            e.printStackTrace(); // this message only for debugging purposes
+            System.out.println("name was null");
         }
     }
 
