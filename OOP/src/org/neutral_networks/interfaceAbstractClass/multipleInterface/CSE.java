@@ -1,6 +1,6 @@
 package org.neutral_networks.interfaceAbstractClass.multipleInterface;
 
-public class CSE implements Department, Student{
+public class CSE implements Department, Student{ // you can able to implements multiple interface
     private String name;
     private int id;
 
