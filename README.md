@@ -9,3 +9,5 @@ java oop
 - [java.com](https://www.java.com/en/)
 
 - [Interface](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html)
+
+- [Abstract](https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
