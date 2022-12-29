@@ -1,5 +1,7 @@
 package org.neutral_networks.interfaceAbstractClass;
 
+import org.neutral_networks.oop3.Car;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,6 +11,11 @@ public class Main {
         carInterface.start();
         carInterface.move(90);
 
-        List<String> names = new ArrayList<>();
+        // take a closer look at this line of code: List<String> names = new ArrayList<>();
+
+        //
+        CarInterface fossilfuelCarInterface = new FossilFuelCar("Mercedes");
+        fossilfuelCarInterface.start();
+        fossilfuelCarInterface.move(35);
     }
 }
