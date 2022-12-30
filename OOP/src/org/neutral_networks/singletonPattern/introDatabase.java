@@ -1,19 +1,20 @@
 package org.neutral_networks.singletonPattern;
 
-public class Database {
+public class introDatabase {
     private String name;
 
-    private static Database instance;
+    private static introDatabase instance;
 
-    public static Database getInstance(String name) {
+    public static introDatabase getInstance(String name) {
         if (null == instance) {
+            instance = new introDatabase(name);
             return instance;
         } else {
             return instance;
         }
     }
 
-    public Database(String name) {
+    public introDatabase(String name) {
         this.name = name;
     }
 
