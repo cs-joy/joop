@@ -8,6 +8,7 @@ public class Main {
 
         Database db = Database.getInstance("SZ");
         System.out.println(db.getName());
+        System.out.println(db.toString());
 
     }
 }

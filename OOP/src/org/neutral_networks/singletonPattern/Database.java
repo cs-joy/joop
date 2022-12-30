@@ -24,4 +24,11 @@ public class Database {
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        String text = "Database class\n" +
+                "Name: " + this.name;
+        return text;
+    }
 }
