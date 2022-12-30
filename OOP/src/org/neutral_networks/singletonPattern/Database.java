@@ -5,14 +5,12 @@ public class Database {
 
     private static Database instance;
 
-    public static Database getInstance(String name) {
+    public static synchronized Database getInstance(String name) {
         if (null == instance) {
             instance = new Database(name);
-
-            return instance;
-        } else {
-            return instance;
         }
+
+        return instance;
     }
 
     private Database(String name) {
