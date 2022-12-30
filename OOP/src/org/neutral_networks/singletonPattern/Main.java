@@ -6,5 +6,8 @@ public class Main {
 
         introDatabase testDatabase = new introDatabase("JS");
 
+        Database db = Database.getInstance("SZ");
+        System.out.println(db.getName());
+
     }
 }

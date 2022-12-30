@@ -7,13 +7,15 @@ public class Database {
 
     public static Database getInstance(String name) {
         if (null == instance) {
+            instance = new Database(name);
+
             return instance;
         } else {
             return instance;
         }
     }
 
-    public Database(String name) {
+    private Database(String name) {
         this.name = name;
     }
 
