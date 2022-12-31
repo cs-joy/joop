@@ -166,6 +166,7 @@ public class Main {
     private static void showAllContacts() {
         for (Contact c: contacts) {
             c.getDetails();
+            System.out.println("************");
         }
         showInitialOptions();
     }
