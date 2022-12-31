@@ -182,9 +182,9 @@ public class Main {
             for (Contact c: contacts) {
                 if (c.getName().equals(name)) {
                     doesExist = true;
-                    Contact dcontact = c;
-                    //contacts.remove(c);
-                    contacts.remove(dcontact);
+                    //Contact dcontact = c;
+                    contacts.remove(c);
+                    //contacts.remove(dcontact);
                 }
             }
 
