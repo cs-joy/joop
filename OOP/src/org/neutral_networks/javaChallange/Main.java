@@ -79,6 +79,58 @@ public class Main {
                 break;
         }
     }
+
+    private static void searchForContacts() {
+        System.out.println("Please enter the contact name:");
+        String name = scanner.next();
+        if (name.equals("")) {
+            System.out.println("Please enter the name:");
+            searchForContacts();
+        } else {
+            boolean doesExist = false;
+
+            for (Contact c: contacts) {
+                if (c.getName().equals(name)) {
+                    doesExist = true;
+                    c.getDetails();
+                }
+            }
+
+            if (!doesExist) {
+                System.out.println("There is no such contact in your phone");
+            }
+        }
+        showInitialOptions();
+    }
+
+    private static void addNewContacts() {
+        System.out.println("Adding new contact..." +
+                           "\nPlease enter the contact's name:");
+        String name = scanner.next();
+        System.out.println("Please enter contact's number:");
+        String number = scanner.next();
+        System.out.println("Please enter the contact's email:");
+        String email = scanner.next();
+
+        // check if any given input field is null or empty
+        if (name.equals("") || number.equals("") || email.equals("")) {
+            System.out.println("Please enter all of the information's");
+            addNewContacts();
+        } else {
+            Contact contact = new Contact(name, number ,email);
+            contacts.add(contact);
+        }
+
+        showInitialOptions();
+    }
+
+    private static void showAllContacts() {
+        for (Contact c: contacts) {
+            c.getDetails();
+        }
+        showInitialOptions();
+    }
+
     private static void manageMessages() {
         System.out.println("Please select one:" +
                            "\n\t1. See the list of all messages" +
