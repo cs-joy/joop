@@ -141,8 +141,23 @@ public class Main {
             System.out.println("Please enter all of the information's");
             addNewContacts();
         } else {
-            Contact contact = new Contact(name, number ,email);
-            contacts.add(contact);
+            // check if given contact is already in our contact list or not
+            boolean doesExist = false;
+            for(Contact c: contacts) {
+                if (c.getName().equals(name)) {
+                    doesExist = true;
+                }
+            }
+
+            if (doesExist) {
+                System.out.println("We have a contact named " + name + " saved on this device");
+                addNewContacts();
+            } else {
+                Contact contact = new Contact(name, number ,email);
+                contacts.add(contact);
+
+                System.out.println(name + " added successfully");
+            }
         }
 
         showInitialOptions();
