@@ -7,6 +7,9 @@ public class Main {
     private static ArrayList<Contact> contacts;
     private static Scanner scanner;
 
+    // unique id, for every message create id is increment by 1 and thus number of the id is to be unique
+    private static int id = 0;
+
     public static void main(String[] args) {
         /**
          * Simulate your phone's contact and messages applications
@@ -98,6 +101,55 @@ public class Main {
                 showInitialOptions();
                 break;
         }
+    }
+
+    private static void sendNewMessage() {
+        System.out.println("Who are you going to send a message");
+        String name = scanner.next();
+
+        if (name.equals("")) {
+            System.out.println("Please enter the name of the contact");
+            sendNewMessage();
+        } else {
+            boolean doesExist = false;
+            for (Contact c: contacts) {
+                if (c.getName().equals(name)) {
+                    doesExist = true;
+                }
+            }
+
+            if (doesExist) {
+                System.out.println("What are you going to say?");
+                String text = scanner.next();
+
+                if (text.equals("")) {
+                    System.out.println("Please enter some message");
+                    sendNewMessage();
+                } else {
+                    id++; //for every message create id is increment by 1 and thus number of the id is to be unique
+
+                    // create message object
+                    Message newMessage = new Message(text, name, id);
+
+                    for (Contact c: contacts) {
+                        if (c.getName().equals(name)) {
+                            ArrayList<Message> newMessages = c.getMessages();
+                            newMessages.add(newMessage);
+
+                            // save this current contact
+                            Contact currentContact = c;
+                            currentContact.setMessages(newMessages);
+                            contacts.remove(c);
+                            contacts.add(currentContact);
+                        }
+                    }
+                }
+            } else {
+                System.out.println("There is no such contact");
+            }
+        }
+
+        showInitialOptions();
     }
 
     private static void showAllMessages() {
