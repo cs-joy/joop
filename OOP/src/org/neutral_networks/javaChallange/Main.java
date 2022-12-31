@@ -104,7 +104,7 @@ public class Main {
     }
 
     private static void sendNewMessage() {
-        System.out.println("Who are you going to send a message");
+        System.out.println("Who are you going to send a message?");
         String name = scanner.next();
 
         if (name.equals("")) {
@@ -182,7 +182,9 @@ public class Main {
             for (Contact c: contacts) {
                 if (c.getName().equals(name)) {
                     doesExist = true;
-                    contacts.remove(c);
+                    Contact dcontact = c;
+                    //contacts.remove(c);
+                    contacts.remove(dcontact);
                 }
             }
 
