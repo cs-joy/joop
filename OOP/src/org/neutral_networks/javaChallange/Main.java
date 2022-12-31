@@ -80,6 +80,30 @@ public class Main {
         }
     }
 
+    private static void deleteContact() {
+        System.out.println("Please enter the name:");
+        String name = scanner.next();
+        if (name.equals("")) {
+            System.out.println("!Please enter the name");
+            deleteContact();
+        } else {
+            boolean doesExist = false;
+
+            for (Contact c: contacts) {
+                if (c.getName().equals(name)) {
+                    doesExist = true;
+                    contacts.remove(c);
+                }
+            }
+
+            if (!doesExist) {
+                System.out.println("There is no such contact");
+            }
+        }
+
+        showInitialOptions();
+    }
+
     private static void searchForContacts() {
         System.out.println("Please enter the contact name:");
         String name = scanner.next();
