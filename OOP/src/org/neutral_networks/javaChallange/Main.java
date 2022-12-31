@@ -80,6 +80,44 @@ public class Main {
         }
     }
 
+    private static void manageMessages() {
+        System.out.println("Please select one:" +
+                "\n\t1. Show all messages" +
+                "\n\t2. Send a new message" +
+                "\n\t3. Go Back");
+
+        int choice = scanner.nextInt();
+        switch (choice) {
+            case 1:
+                showAllMessages();
+                break;
+            case 2:
+                sendNewMessage();
+                break;
+            default:
+                showInitialOptions();
+                break;
+        }
+    }
+
+    private static void showAllMessages() {
+        ArrayList<Message> allMessages = new ArrayList<>();
+        for (Contact c: contacts) {
+            allMessages.addAll(c.getMessages());
+        }
+
+        if (allMessages.size() > 0) {
+            for (Message m: allMessages) {
+                m.getDetails();
+                System.out.println("*********");
+            }
+        } else {
+            System.out.println("You don't have any message");
+        }
+
+        showInitialOptions();
+    }
+
     private static void deleteContact() {
         System.out.println("Please enter the name:");
         String name = scanner.next();
@@ -171,10 +209,4 @@ public class Main {
         showInitialOptions();
     }
 
-    private static void manageMessages() {
-        System.out.println("Please select one:" +
-                           "\n\t1. See the list of all messages" +
-                           "\n\t2. Send a new message" +
-                           "\n\t3. Go back to the previous menu");
-    }
 }

@@ -6,9 +6,9 @@ public class Contact {
     private String name;
     private String number;
     private String email;
-    private ArrayList<String> messages;
+    private ArrayList<Message> messages;
 
-    public Contact(String name, String number, String email, ArrayList<String> messages) {
+    public Contact(String name, String number, String email, ArrayList<Message> messages) {
         this.name = name;
         this.number = number;
         this.email = email;
@@ -54,11 +54,11 @@ public class Contact {
         this.email = email;
     }
 
-    public ArrayList<String> getMessages() {
+    public ArrayList<Message> getMessages() {
         return messages;
     }
 
-    public void setMessages(ArrayList<String> messages) {
+    public void setMessages(ArrayList<Message> messages) {
         this.messages = messages;
     }
 }
