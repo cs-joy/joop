@@ -183,7 +183,9 @@ public class Main {
                 if (c.getName().equals(name)) {
                     doesExist = true;
                     contacts.remove(c);
+
                 }
+                break;
             }
 
             if (!doesExist) {
