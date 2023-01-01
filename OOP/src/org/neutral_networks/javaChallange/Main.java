@@ -132,6 +132,7 @@ public class Main {
                     // create message object
                     Message newMessage = new Message(text, name, id);
 
+                    // need to expand the feature when you send large amount of word to a user
                     for (Contact c: contacts) {
                         if (c.getName().equals(name)) {
                             ArrayList<Message> newMessages = c.getMessages();
