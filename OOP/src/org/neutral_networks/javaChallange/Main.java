@@ -266,11 +266,16 @@ public class Main {
     }
 
     private static void showAllContacts() {
-        for (Contact c: contacts) {
-            c.getDetails();
-            System.out.println("************");
+        if (contacts.size() > 0) {
+            for (Contact c: contacts) {
+                c.getDetails();
+                System.out.println("************");
+            }
+            showInitialOptions();
+        } else {
+            System.out.println("You do not have any contact");
+            showInitialOptions();
         }
-        showInitialOptions();
     }
 
 }
