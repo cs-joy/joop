@@ -1,6 +1,7 @@
 package org.neutral_networks.javaChallange;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Scanner;
 
 public class Main {
@@ -178,7 +179,7 @@ public class Main {
             deleteContact();
         } else {
             boolean doesExist = false;
-
+            /*
             for (Contact c: contacts) {
                 if (c.getName().equals(name)) {
                     doesExist = true;
@@ -186,6 +187,14 @@ public class Main {
 
                 }
                 break;
+            }*/
+            // solve ConcurrentModificationException here (for loop)
+            for (Iterator<Contact> c = contacts.iterator(); c.hasNext();) {
+                Contact c_contacts = c.next();
+                if (c_contacts.getName().equals(name)) {
+                    doesExist = true;
+                    c.remove();
+                }
             }
 
             if (!doesExist) {
